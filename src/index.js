@@ -20,3 +20,7 @@ dropdown.addEventListener('click', function() {
     }
 
 })
+
+exports.printMsg = function() {
+    console.log('This is a dropdown menu package');
+}
