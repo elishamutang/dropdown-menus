@@ -2,6 +2,7 @@ const path = require("path");
 const { merge } = require("webpack-merge");
 const common = require("./webpack.common");
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerWebpackPlugin = require('css-minimizer-webpack-plugin');
 
 module.exports = merge(common, {
   mode: "production",
@@ -12,6 +13,12 @@ module.exports = merge(common, {
         test: /\.css$/i,
         use: [MiniCSSExtractPlugin.loader, "css-loader"],
       },
+    ]
+  },
+  optimization: {
+    minimizer: [
+      '...',
+      new CssMinimizerWebpackPlugin(),
     ]
   }
 });
