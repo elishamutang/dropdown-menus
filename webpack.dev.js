@@ -16,4 +16,12 @@ module.exports = merge(common, {
     historyApiFallback: true,
     watchFiles: ["src/template.html"],
   },
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+    ]
+  }
 });

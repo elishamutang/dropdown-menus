@@ -1,8 +1,8 @@
 {
-  "name": "dropdow-menu-package",
+  "name": "dropdown-menu-package",
   "version": "1.0.0",
   "description": "Dropdown menu example",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.prod.js",
@@ -21,6 +21,7 @@
     "eslint-plugin-import": "^2.29.1",
     "globals": "^15.0.0",
     "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.9.0",
     "prettier": "3.2.5",
     "style-loader": "^3.3.4",
     "webp-loader": "^0.6.0",
@@ -32,6 +33,7 @@
   "dependencies": {
     "boxicons": "^2.1.4",
     "date-fns": "^3.3.1",
-    "rcolor": "^2.0.2"
+    "rcolor": "^2.0.2",
+    "test-dropdown-by-eli": "^1.0.3"
   }
 }

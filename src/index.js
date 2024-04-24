@@ -1,26 +1,28 @@
 import './styles.css';
 
-const dropdown = document.querySelector('.dropdown');
-const dropdownContent = document.querySelector('.dropdown-content');
+function dropdownMenu() {
 
-dropdown.addEventListener('click', function() {
+    const dropdown = document.querySelector('.dropdown');
+    const dropdownContent = document.querySelector('.dropdown-content');
 
-    if(![...dropdownContent.classList].includes('open-dropdown')) {
+    dropdown.addEventListener('click', function() {
 
-        dropdownContent.className += ' open-dropdown';
+        if(![...dropdownContent.classList].includes('open-dropdown')) {
 
-    } else {
-        
-        const defaultClass = [...dropdownContent.classList].filter((classes) => {
-            return classes !== 'open-dropdown';
-        })
+            dropdownContent.className += ' open-dropdown';
 
-        dropdownContent.className = defaultClass.join(' ');
+        } else {
+            
+            const defaultClass = [...dropdownContent.classList].filter((classes) => {
+                return classes !== 'open-dropdown';
+            })
 
-    }
+            dropdownContent.className = defaultClass.join(' ');
 
-})
+        }
 
-exports.printMsg = function() {
-    console.log('This is a dropdown menu package');
+    })
+
 }
+
+dropdownMenu();
