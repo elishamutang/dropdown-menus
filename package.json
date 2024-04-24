@@ -3,12 +3,10 @@
   "version": "1.0.0",
   "description": "Dropdown menu example",
   "main": "./dist/main.js",
-  "module": "./dist/main.mjs",
   "scripts": {
     "build": "webpack --config webpack.prod.js",
     "start": "webpack serve --open --config webpack.dev.js"
   },
-  "files": ["./dist/*"],
   "author": "elishamutang",
   "license": "ISC",
   "devDependencies": {
@@ -32,6 +30,7 @@
     "webpack-merge": "^5.10.0"
   },
   "dependencies": {
+    "add-event-listener": "^1.0.0",
     "boxicons": "^2.1.4",
     "date-fns": "^3.3.1",
     "rcolor": "^2.0.2",
