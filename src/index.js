@@ -25,4 +25,4 @@ function dropdownMenu() {
 
 }
 
-dropdownMenu();
+module.exports = dropdownMenu;
